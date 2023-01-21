@@ -10,17 +10,17 @@
                     <i class="ri-braces-line"></i> FullStack Web/Mobile Developer
                 </h3>
 
-                <div class="skills__info">
-                    <div class="skills__data">
+                <div class="skills__info" >
+                    <div class="skills__data" v-for="skill in skills" :key="skill.name">
                         <div class="skills__blob">
-                            <img src="../assets/img/html-1.svg" alt="">
+                            <img :src="skill.img" :alt="skill.name">
                         </div>
 
-                        <h3 class="skills__name">HTML</h3>
-                        <span class="skills__subtitle">Intermediate</span>
+                        <h3 class="skills__name">{{ skill.name }}</h3>
+                        <span class="skills__subtitle">{{ skill.level }}</span>
                     </div>
 
-                    <div class="skills__data">
+                    <!-- <div class="skills__data">
                         <div class="skills__blob">
                             <img src="../assets/img/css-3.svg" alt="">
                         </div>
@@ -81,7 +81,7 @@
 
                         <h3 class="skills__name">POSTGRESS</h3>
                         <span class="skills__subtitle">Intermediate</span>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -93,6 +93,17 @@
 
 <script setup>
 
+    const skills = ref([
+        {name: 'TypeScript', img: "typescript-2", level: 'Intermediate'},
+        {name: 'Go', img: '../assets/img/typescript-2.svg', level: 'Intermediate'},
+        {name: 'Vue', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
+        {name: 'Nuxt', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
+        {name: 'Next', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
+        {name: 'Nest', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
+        {name: 'Prisma', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
+        {name: 'Tailwindcss', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
+        {name: 'Git', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
+    ])
 </script>
 
 <style scoped>
