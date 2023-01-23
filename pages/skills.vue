@@ -92,17 +92,19 @@
 </template>
 
 <script setup>
+import typescriptLogo from "~/assets/img/typescript-2.svg"
+import figmaLogo from "~/assets/img/go-6.svg"
 
     const skills = ref([
-        {name: 'TypeScript', img: "typescript-2", level: 'Intermediate'},
-        {name: 'Go', img: '../assets/img/typescript-2.svg', level: 'Intermediate'},
-        {name: 'Vue', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
-        {name: 'Nuxt', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
-        {name: 'Next', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
-        {name: 'Nest', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
-        {name: 'Prisma', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
-        {name: 'Tailwindcss', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
-        {name: 'Git', img: '../assets/img/figma-1.svg', level: 'Intermediate'},
+        {name: 'TypeScript', img: typescriptLogo , level: 'Intermediate'},
+        {name: 'Go', img: typescriptLogo, level: 'Intermediate'},
+        {name: 'Vue', img: figmaLogo, level: 'Intermediate'},
+        {name: 'Nuxt', img: figmaLogo, level: 'Intermediate'},
+        {name: 'Next', img: figmaLogo, level: 'Intermediate'},
+        {name: 'Nest', img: figmaLogo, level: 'Intermediate'},
+        {name: 'Prisma', img: figmaLogo, level: 'Intermediate'},
+        {name: 'Tailwindcss', img: figmaLogo, level: 'Intermediate'},
+        {name: 'Git', img: figmaLogo, level: 'Intermediate'},
     ])
 </script>
 
